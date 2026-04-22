@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <i class="fa-solid fa-route"></i>
+        Travel Planner
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="sidebar">
+        <h2>Plan Your Journey</h2>
+
+        <div class="input-box">
+            <input type="text" id="destinationInput" placeholder="Enter city or place">
+            <button onclick="addDestination()">Add</button>
+        </div>
+
+        <div class="summary-card">
+            <h3>Trip Summary</h3>
+            <p><i class="fa-solid fa-road"></i> Distance: <span id="distance">0 km</span></p>
+            <p><i class="fa-solid fa-clock"></i> Time: <span id="time">0 hrs</span></p>
+        </div>
+
+        <ul id="destinationList"></ul>
+    </div>
+
+    <div id="map"></div>
+
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
